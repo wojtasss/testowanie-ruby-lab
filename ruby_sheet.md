@@ -88,7 +88,7 @@ arr.empty?                  # => false
 ```
 ```ruby
 arr.include?('Konqueror')   # => false
-
+```
 * __Dodawanie elementów do tablicy, różne sposoby.__
 
 ```ruby
