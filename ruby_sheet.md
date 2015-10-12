@@ -110,3 +110,41 @@ arr.insert(3, 'apple')    #=> [0, 1, 2, 'apple', 3, 4, 5, 6]
 arr.insert(3, 'orange', 'pear', 'grapefruit')
 # => [0, 1, 2, "orange", "pear", "grapefruit", "apple", 3, 4, 5, 6]
 ```
+
+* __Usuwanie elementów z tablicy, różne sposoby__
+
+```ruby
+arr =  [1, 2, 3, 4, 5, 6]     # przykładowa tablica
+```
+```ruby
+arr.pop             # => 6
+arr                 # => [1, 2, 3, 4, 5]
+```
+```ruby
+arr.shift           # => 1
+arr                 # => [2, 3, 4, 5]
+```
+```ruby
+arr.delete_at(2)    # => 4
+arr                 # => [2, 3, 5]
+```
+```ruby
+arr = [1, 2, 2, 3]
+arr.delete(2)       # => 2
+arr                 # => [1,3]
+```
+```ruby
+arr = ['foo', 0, nil, 'bar', 7, 'baz', nil]   # => przykładowa tablica
+```
+```ruby
+arr.compact         #=> ['foo', 0, 'bar', 7, 'baz']
+arr                 #=> ['foo', 0, nil, 'bar', 7, 'baz', nil]
+arr.compact!        #=> ['foo', 0, 'bar', 7, 'baz']
+arr                 #=> ['foo', 0, 'bar', 7, 'baz']
+```
+```ruby
+arr = [2, 5, 6, 556, 6, 6, 8, 9, 0, 123, 556]     # => przykładowa tablica
+```
+```ruby
+arr.uniq #=> [2, 5, 6, 556, 8, 9, 0, 123]
+```
