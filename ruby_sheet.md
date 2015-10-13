@@ -148,3 +148,43 @@ arr = [2, 5, 6, 556, 6, 6, 8, 9, 0, 123, 556]     # => przykładowa tablica
 ```ruby
 arr.uniq            #=> [2, 5, 6, 556, 8, 9, 0, 123]
 ```
+* __Iterowanie tablic.__
+
+```ruby
+arr = [1, 2, 3, 4, 5]                     # => prints: -9 -8 -7 -6 -5
+arr.each { |a| print a -= 10, " " }       # => [1, 2, 3, 4, 5]
+```
+```ruby
+words = %w[first second third fourth fifth sixth]     # => ["sixth", "fifth", "fourth", "third", "second", "first"]
+str = ""
+words.reverse_each { |word| str += "#{word} " }
+p str                                                 # => "sixth fifth fourth third second first "
+```
+```ruby
+arr.map { |a| 2*a }             # => [2, 4, 6, 8, 10]
+arr                             # => [1, 2, 3, 4, 5]
+arr.map! { |a| a**2 }           # => [1, 4, 9, 16, 25]
+arr                             # => [1, 4, 9, 16, 25]
+```
+* __Selektywny wybór elementów z tablic.__
+
+```ruby
+arr = [1, 2, 3, 4, 5, 6]        # => [1, 2, 3, 4, 5, 6] 
+```
+```ruby
+arr.select { |a| a > 3 }        # => [4, 5, 6]
+arr.reject { |a| a < 3 }        # => [3, 4, 5, 6]
+arr.drop_while { |a| a < 4 }    # => [4, 5, 6]
+arr                             # => [1, 2, 3, 4, 5, 6]
+```
+```ruby
+arr = [1, 2, 3, 4, 5, 6]        # => [1, 2, 3, 4, 5, 6]
+arr.delete_if { |a| a < 4 }     # => [4, 5, 6]
+arr                             # => [4, 5, 6]
+```
+```ruby
+arr = [1, 2, 3, 4, 5, 6]        # => [1, 2, 3, 4, 5, 6]
+arr.keep_if { |a| a < 4 }       # => [1, 2, 3]
+arr                             # => [1, 2, 3]
+```
+
