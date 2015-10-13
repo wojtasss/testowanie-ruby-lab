@@ -155,7 +155,9 @@ arr = [1, 2, 3, 4, 5]                     # => prints: -9 -8 -7 -6 -5
 arr.each { |a| print a -= 10, " " }       # => [1, 2, 3, 4, 5]
 ```
 ```ruby
-words = %w[first second third fourth fifth sixth]     # => ["sixth", "fifth", "fourth", "third", "second", "first"]
+words = %w[first second third fourth fifth sixth]     
+# => ["sixth", "fifth", "fourth", "third", "second", "first"]
+
 str = ""
 words.reverse_each { |word| str += "#{word} " }
 p str                                                 # => "sixth fifth fourth third second first "
@@ -168,6 +170,8 @@ arr                             # => [1, 4, 9, 16, 25]
 ```
 * __Selektywny wybór elementów z tablic.__
 
+Bez zmian w tablicy na której wywołana jest metoda
+
 ```ruby
 arr = [1, 2, 3, 4, 5, 6]        # => [1, 2, 3, 4, 5, 6] 
 ```
@@ -177,6 +181,8 @@ arr.reject { |a| a < 3 }        # => [3, 4, 5, 6]
 arr.drop_while { |a| a < 4 }    # => [4, 5, 6]
 arr                             # => [1, 2, 3, 4, 5, 6]
 ```
+
+Ze zmianą w tablicy na której wywołana jest metoda
 ```ruby
 arr = [1, 2, 3, 4, 5, 6]        # => [1, 2, 3, 4, 5, 6]
 arr.delete_if { |a| a < 4 }     # => [4, 5, 6]
