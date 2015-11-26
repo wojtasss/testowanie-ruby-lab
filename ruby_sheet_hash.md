@@ -1,4 +1,4 @@
 #Hash
 
-** __Tworzenie hashy, różne sposoby.__ **
+* __Tworzenie hashy, różne sposoby.__ *
 
