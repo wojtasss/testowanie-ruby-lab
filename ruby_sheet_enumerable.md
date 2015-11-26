@@ -22,3 +22,8 @@ ary.count               #=> 4
 ary.count(2)            #=> 2
 ary.count{ |x| x%2==0 } #=> 3
 ```
+
+* __map { |obj| block } → array__
+```ruby
+(1..4).map { |i| i*i }    #=> [1, 4, 9, 16]
+```
