@@ -16,5 +16,5 @@ Podręczne linki:
 ## Zadania
 
 1. [x] [Learn X in Y minutes, where X = Ruby Array/Enumerable/Hash](https://github.com/wojtasss/testowanie-ruby-lab/tree/master/zad_1)
-2. [x] [Coś do przetestowania na początek (szyfrowanie)](https://github.com/wojtasss/testowanie-ruby-lab/tree/master/zad_2)
+2. [x] [Coś do przetestowania na początek](https://github.com/wojtasss/testowanie-ruby-lab/tree/master/zad_2)
 3. [x] [Kalkulator fitness](https://github.com/suscilowicz/Ruby/tree/master/zad3)
